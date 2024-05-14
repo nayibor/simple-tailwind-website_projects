@@ -1,8 +1,13 @@
+const btn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
+
 const input = document.getElementById('link-input')
 const linkForm = document.getElementById('link-form')
 const errMsg = document.getElementById('err-msg')
 
 linkForm.addEventListener('submit',formSubmit)
+btn.addEventListener('click',navToggle)
+
 
 // Validate a URL
 function validURL(str) {
@@ -35,4 +40,12 @@ function formSubmit(e){
 	alert('Success')
   }
 
+}
+
+
+
+function navToggle(e){
+    btn.classList.toggle('open')
+    menu.classList.toggle('flex')
+    menu.classList.toggle('hidden')
 }
