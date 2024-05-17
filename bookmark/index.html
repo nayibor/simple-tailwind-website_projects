@@ -14,7 +14,59 @@
     <script type="text/javascript" src="js/live.js"></script>      
     <title>Bookmark Website</title>
   </head>
-  <body>
-    <h1 class="text-3xl mb-4 bg-red-100">Bookmark Starter</h1>
+  <body class="overflow-x-hidden">
+    <nav class="container relative mx-auto p-6">
+      <!-- Flex container for Nav items -->
+      <div class="flex items-center justify-between space-x-20">
+	<!-- Logo -->
+	<div class="z-30">
+	  <img alt="" src="images/logo-bookmark.svg"/>
+	</div>
+	<!-- Menu items -->
+	<div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+	  <a class="tracking widest hover:text-softRed" href="#features">FEATURES</a>
+	  <a class="tracking widest hover:text-softRed" href="#download">DOWNLOAD</a>
+	  <a class="tracking widest hover:text-softRed" href="#faq">FAQ</a>
+		<a class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white"
+		   href="">Login</a>
+	</div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+
+      <!-- Container for Image and content -->
+      <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+	<!-- Content -->
+	<div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+	  <h1 class="text-3xl font-semibold text-center lg:text-6xl lg:text-left">A Simple Bookmark Manager</h1>
+	  <p class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for free.
+	  </p>
+
+	  <!-- Buttons Container -->
+	  <div class="flex items-center justify-center w-full space-x-4 lg:justify-start">
+	    <a class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:text-softBlue"
+	       href="">Get It On Chrome
+	    </a>
+	    <a class="p-4 text-sm font-semibold text-black bg-gray-300 rounded shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600"
+	       href="">Get It On Firefox
+	    </a>	    
+	  </div>
+	  
+	</div>
+
+	<!-- Image -->
+	<div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+	  <div class="bg-hero"></div>
+	  <img class="relative z-10 lg-top-24 xl:top-0 overflow-x-visible" alt="" src="images/illustration-hero.svg" />
+	</div>
+	
+      </div>
+      
+    </section>
+    
   </body>
 </html>
